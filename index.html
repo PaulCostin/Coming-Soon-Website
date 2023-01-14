@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/5970bc6679.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Ping coming soon page</title>
+  </head>
+
+  <body>
+    <div class="page">
+      <img class="logo" src="images/logo.svg" alt="" />
+      <h1><span>We are launching</span> soon!</h1>
+      <p>Subscribe and get notified</p>
+      <form id="form">
+        <div class="control">
+          <div style="width: 100%; max-width: 300px">
+            <input
+              id="email"
+              autocomplete="nope"
+              placeholder="Your email address..."
+            />
+            <p id="error">Please provide a valid email address</p>
+          </div>
+          <div style="width: 100%; max-width: 300px">
+            <button
+              onclick="validateEmail()"
+              class="button"
+              value="submit"
+              type="submit"
+            >
+              Notify Me
+            </button>
+          </div>
+        </div>
+      </form>
+      <img
+        class="dashboard-image"
+        src="images/illustration-dashboard.png"
+        alt=""
+      />
+      <footer>
+        <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+        <a href=""><i class="fa-brands fa-twitter"></i></a>
+        <a href=""><i class="fa-brands fa-instagram"></i></a>
+      </footer>
+      <p class="copyright">&copy; Copyright Ping. All rights reserved.</p>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
